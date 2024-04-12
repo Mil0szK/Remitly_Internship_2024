@@ -4,7 +4,7 @@
 
 Remitly Internship 2024 exercise. The project verifies the input JSON file. 
 Input JSON file is defined as AWS::IAM::Role Policy. 
-Returns False if an input JSON file is not a valid AWS::IAM::Role Policy or if Json Resource field contains
+Returns False if an input JSON file is not a valid AWS::IAM::Role Policy or if JSON Resource field contains
 a single asterisk. Returns True otherwise.
 
 ## Installation
