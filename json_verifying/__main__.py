@@ -8,8 +8,10 @@ def main():
     args = parse.parse_args()
 
     result = is_json_valid(args.json_file)
-    if result:
+    if result == True:
         print(f"File {args.json_file} is a valid JSON file.")
+    elif result == False:
+        print(f"File {args.json_file} is valid, but contains '*' in Resource.")
     else:
         print(f"File {args.json_file} is not a valid JSON file.")
 
