@@ -10,10 +10,13 @@ def main():
     result = is_json_valid(args.json_file)
     if result == True:
         print(f"File {args.json_file} is a valid JSON file.")
+        return True
     elif result == False:
         print(f"File {args.json_file} is valid, but contains '*' in Resource.")
+        return False
     else:
         print(f"File {args.json_file} is not a valid JSON file.")
+        return True
 
 
 if __name__ == "__main__":
